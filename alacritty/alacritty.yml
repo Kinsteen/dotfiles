@@ -3,6 +3,10 @@ window:
     x: 24
     y: 24
 
+font:
+  normal:
+    family: "MesloLGS NF"
+
 # Colors (Tokyo Night)
 # Source: https://github.com/zatchheems/tokyo-night-alacritty-theme
 colors:

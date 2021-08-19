@@ -14,3 +14,5 @@ ln -sf $(pwd)/rofi/* ~/.config/rofi/
 ln -sf $(pwd)/sxhkd ~/.config/
 
 ln -sf $(pwd)/zshrc ~/.zshrc
+ln -sf $(pwd)/p10k.zsh ~/.p10k.zsh
+ln -sf $(pwd)/xinitrc ~/.xinitrc
