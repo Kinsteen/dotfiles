@@ -1,0 +1,11 @@
+
+xrandr -q | grep -q "DP-0 connected (" && {
+  echo "Screen disabled, enabling"
+  xrandr --output DP-0 --auto --right-of DP-1
+  bspc wm -r
+  exit 0
+}
+
+echo "Screen enabled, disabling"
+killall picom
+xrandr --output DP-0 --off
