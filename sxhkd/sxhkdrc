@@ -85,11 +85,11 @@ super + {o,i}
 	bspc wm -h on
 
 # focus to the given desktop
-super + {1-9,0}
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 	bspc desktop -f '^{1-9,10}'
 
 # send to the given desktop
-super + shift + {1-9,0}
+super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 	bspc node -d '^{1-9,10}'
 
 #
@@ -127,3 +127,21 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# function keys
+#
+XF86MonBrightnessUp
+	xbacklight -inc 10
+
+XF86MonBrightnessDown
+	xbacklight -dec 10
+
+XF86Audio{Lower,Raise}Volume
+	amixer -D pulse sset Master 5%{-,+}
+
+XF86AudioMicMute
+	amixer set Capture toggle
+
+XF86KbdBrightness{Down,Up}
+	kbdbacklight {down, up}
