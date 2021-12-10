@@ -111,3 +111,4 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source /usr/share/nvm/init-nvm.sh
+. "/home/sam/.acme.sh/acme.sh.env"

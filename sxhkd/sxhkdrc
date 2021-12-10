@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# prnt
+Print
+	flameshot gui
+
 # terminal emulator
 super + Return
 	alacritty
@@ -9,6 +13,10 @@ super + Return
 # firefox
 super + e
 	firefox
+
+# Thunar
+super + r
+	Thunar
 
 # program launcher
 super + @space

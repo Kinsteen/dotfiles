@@ -4,9 +4,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 ~/.config/polybar/launch.sh --material
 picom --experimental-backends --backend glx &
-feh --bg-scale /home/sam/dotfiles/wallpaper.png
+feh --bg-scale /home/sam/dotfiles/wallpaper3.jpg
 nm-applet &
 dunst &
+flameshot &
+
 
 bspc monitor -d I II III IV V
 
